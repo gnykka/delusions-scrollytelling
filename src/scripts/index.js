@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rx = rRange.min + ((scroll - rDomain.min) / (rDomain.max - rDomain.min)) *
         (rRange.max - rRange.min);
 
-      section.classList.toggle('dark', rx >= width * 0.5);
+      section.classList.toggle('dark', rx >= Math.max(width, height) * 0.5);
 
       if (scroll >= maxRadius) {
         svg.style.transform = `translateY(-${scroll - maxRadius}px)`;

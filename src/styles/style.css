@@ -1,3 +1,5 @@
+@import './font.css';
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -10,7 +12,7 @@ html, body {
   padding: 0;
   font-weight: 200;
   font-size: 14px;
-  font-family: Helvetica, sans-serif;
+  font-family: Montserrat, Helvetica, sans-serif;
 }
 
 main {
@@ -45,7 +47,6 @@ main {
 }
 
 .start .header .logo {
-  font-family: Helvetica, sans-serif;
   line-height: 0.7em;
 }
 
@@ -67,7 +68,7 @@ main {
   top: 0;
   height: 100%;
   left: 50%;
-  transform: translateX(-2px);
+  transform: translateX(-4px);
   width: 3px;
   background: black;
 }
