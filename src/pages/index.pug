@@ -1,0 +1,38 @@
+include /partials/intro
+
+html
+  head
+    title Delusions
+    meta(name="title" content="Delusions")
+    meta(name="description" content="Interactive story on delusions and biases for Intuition Park")
+    link(rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="../assets/favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="../styles/style.css")
+
+    script(src="../scripts/start.js")
+    script(src="../scripts/intro.js")
+
+  body
+    main
+      section.start
+        .header.fixed
+          .logo
+            | И<span>с</span>ка<br/>&nbsp;ж<span>е</span><br/>н<span>и</span>я
+          .year 2020
+        svg
+          ellipse(cx="50%" cy="50%" rx="250" ry="25")
+        .anchor
+
+      section.intro
+        div
+          | Мы привыкли считать, что мы хозяева своих решений. Мы принимаем решения, исходя из своих убеждений, выводов, желаний, настроения. Но как формируются убеждения, делаются выводы, возникают желания, меняется настроение?
+          br
+          br
+          | За мышление и принятие решений отвечает мозг. Это удивительный механизм, но не безупречный. Есть ситуации, когда наш собственный мозг нас обманывает. Это когнитивные искажения — систематические сбои в работе мозга, которые приводят к неправильным выводам из имеющейся информации. Есть ситуации, когда нашим мнением осознанно манипулируют.
+          br
+          br
+          | Когнитивные искажения есть у всех. Их не может не быть — так устроены люди. Их нельзя избежать. Все, что мы можем сделать — научиться их замечать у себя, чтобы корректировать свои решения.
+          br
+          br
+          | Проверим, как вас можно обмануть? Отвечайте на вопросы, вычисляйте махинации, распознавайте когнитивные искажения.
+        +intro()

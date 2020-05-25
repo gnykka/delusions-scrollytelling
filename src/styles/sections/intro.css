@@ -1,0 +1,22 @@
+.intro {
+  position: relative;
+  padding: 3em;
+  background: black;
+  color: white;
+}
+
+.intro div {
+  width: 50%;
+  padding-right: 1em;
+  min-width: 200px;
+  max-width: 600px;
+  font-size: 1.6em;
+}
+
+.intro svg {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  width: calc(50% - 3em);
+  background: red;
+}

@@ -1,17 +1,20 @@
 {
   "name": "delusions-scrollytelling",
   "version": "1.0.0",
-  "main": "src/pages/index.html",
+  "main": "src/pages/index.pug",
   "repository": "https://github.com/gnykka/delusions-scrollytelling.git",
   "author": "Nataliya Stepanova",
   "license": "MIT",
   "scripts": {
-    "start": "parcel serve src/pages/index.html --open",
-    "build": "parcel build src/pages/index.html",
+    "start": "parcel serve src/pages/index.pug --open",
+    "build": "parcel build src/pages/index.pug",
     "deploy": "yarn build && yarn copy",
     "copy": "source .env && rsync -qazP $DEPLOY_FILES $DEPLOY_TARGET"
   },
   "dependencies": {
     "parcel-bundler": "1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^3.0.0"
   }
 }
