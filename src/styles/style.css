@@ -30,3 +30,8 @@ main {
 /* Second intro section */
 /* ------------------- */
 @import './sections/intro.css';
+
+
+section.last {
+  height: 500px;
+}

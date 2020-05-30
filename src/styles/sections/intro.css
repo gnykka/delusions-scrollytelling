@@ -1,16 +1,24 @@
 .intro {
   position: relative;
+  display: flex;
   padding: 3em;
   background: black;
   color: white;
 }
 
-.intro div {
+.intro .content {
   width: 50%;
   padding-right: 1em;
   min-width: 200px;
   max-width: 600px;
   font-size: 1.6em;
+}
+
+.intro .content > div {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro svg {
@@ -19,4 +27,12 @@
   right: 3em;
   width: calc(50% - 3em);
   background: red;
+}
+
+.intro svg.fixed {
+  position: fixed;
+}
+.intro svg.bottom {
+  top: unset;
+  bottom: 3em;
 }
