@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const svgTop = top + scrollY;
   const svgBottom = bottom + scrollY - height;
 
-  const svgHeight = svgBottom - svgTop;
-  const animationDistance = Math.round(svgHeight / svgGroups.length);
+  const animationHeight = text.querySelector('div').clientHeight;
+  const animationDistance = Math.round(animationHeight / svgGroups.length);
 
   const hideSvg = () => {
     svgBackground.style.opacity = 0;
@@ -36,18 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isInside) {
       const value = (scroll - svgTop) / animationDistance;
       const index = Math.floor(value);
-      const opacity = value - index;
 
       svgBackground.style.opacity = 1;
 
       svgGroups.forEach((gr, i) => {
-        if (i === index) {
-          gr.style.opacity = opacity;
-        } else if (index > 0 && i === index - 1) {
-          gr.style.opacity = 1;
-        } else {
-          gr.style.opacity = 0;
-        }
+        gr.style.opacity = i === index ? 1 : 0;
       });
     } else if (scroll < svgTop) {
       hideSvg();
