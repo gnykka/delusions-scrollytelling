@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.6em;
 }
 
 .intro svg {
@@ -26,7 +27,6 @@
   top: 3em;
   right: 3em;
   width: calc(50% - 3em);
-  background: red;
 }
 
 .intro svg.fixed {
@@ -35,4 +35,24 @@
 .intro svg.bottom {
   top: unset;
   bottom: 3em;
+}
+
+/* all svg styles (16 groups) */
+.intro svg g.background {
+  transition: opacity 100ms ease-in-out;
+}
+.intro svg g.group {
+  transition: opacity 100ms ease-in-out;
+}
+.intro svg .white {
+  fill: white;
+}
+.intro svg .opaque {
+  opacity: 0.6;
+}
+.intro svg .custom {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 0.79px;
 }
