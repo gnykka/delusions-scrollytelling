@@ -38,10 +38,7 @@
 }
 
 /* all svg styles (16 groups) */
-.intro svg g.background {
-  transition: opacity 100ms ease-in-out;
-}
-.intro svg g.group {
+.intro svg g {
   transition: opacity 100ms ease-in-out;
 }
 .intro svg .white {
