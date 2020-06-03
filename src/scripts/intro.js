@@ -59,5 +59,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll);
 
   svg.style.height = `${height - svgPadding * 2}px`;
-  onScroll();
+  hideSvg();
 });
