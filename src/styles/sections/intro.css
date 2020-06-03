@@ -16,9 +16,6 @@
 
 .intro .content > div {
   min-height: max(50vh, 50vw);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 1.6em;
 }
 

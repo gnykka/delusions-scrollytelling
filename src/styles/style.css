@@ -13,6 +13,7 @@ html, body {
   font-weight: 200;
   font-size: 14px;
   font-family: Montserrat, Helvetica, sans-serif;
+  background: black;
 }
 
 main {
@@ -21,12 +22,21 @@ main {
   height: 100%;
 }
 
-/* ------------------ */
-/* First start section */
-/* ------------------ */
-@import './sections/start.css';
+button {
+  font-family: Montserrat, Helvetica, sans-serif;
+}
 
 /* ------------------- */
-/* Second intro section */
+/* First start section */
 /* ------------------- */
+@import './sections/start.css';
+
+/* -------------------- */
+/* Second intro section */
+/* -------------------- */
 @import './sections/intro.css';
+
+/* ----------------------- */
+/* Third questions section */
+/* ----------------------- */
+@import './sections/question.css';
