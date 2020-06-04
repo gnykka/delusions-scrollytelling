@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   padding: 3em;
+  padding-bottom: 0;
   background: black;
   color: white;
 }
@@ -11,7 +12,7 @@
   padding-right: 1em;
   min-width: 200px;
   max-width: 600px;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 .intro .content > div {
@@ -19,34 +20,45 @@
   line-height: 1.6em;
 }
 
-.intro svg {
+.intro .animation svg {
   position: absolute;
   top: 3em;
   right: 0;
   width: 50%;
 }
 
-.intro svg.fixed {
+.intro .animation svg.fixed {
   position: fixed;
 }
-.intro svg.bottom {
+.intro .animation svg.bottom {
   top: unset;
   bottom: 3em;
 }
 
 /* all svg styles (16 groups) */
-.intro svg g {
+.intro .animation svg g {
   transition: opacity 100ms ease-in-out;
 }
-.intro svg .white {
+.intro .animation svg .white {
   fill: white;
 }
-.intro svg .opaque {
+.intro .animation svg .opaque {
   opacity: 0.6;
 }
-.intro svg .custom {
+.intro .animation svg .custom {
   fill: none;
   stroke: black;
   stroke-miterlimit: 10;
   stroke-width: 0.79px;
+}
+
+.intro svg.edge {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.intro svg.edge path {
+  fill: white;
 }

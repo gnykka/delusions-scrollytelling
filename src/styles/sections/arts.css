@@ -1,0 +1,43 @@
+@-webkit-keyframes easeInElastic {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0px); }
+}
+@-moz-keyframes easeInElastic {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes easeInElastic {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0px); }
+}
+
+svg.head-container {
+  width: 100%;
+  background: white;
+}
+svg.head-container path.black {
+  fill: #1f1f1f;
+}
+svg.head-container path.white {
+  fill: white;
+}
+svg.head-container path.figure {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+  stroke-width: 1.04;
+}
+svg.head-container g.center {
+  transform: translate(40%, 25%);
+}
+
+svg.head-container g.head {
+  -webkit-animation: easeInElastic 1500ms ease-in-out infinite both;
+  -moz-animation:    easeInElastic 1500ms ease-in-out infinite both;
+  -ms-animation:     easeInElastic 1500ms ease-in-out infinite both;
+  -o-animation:      easeInElastic 1500ms ease-in-out infinite both;
+  animation:         easeInElastic 1500ms ease-in-out infinite both;
+}

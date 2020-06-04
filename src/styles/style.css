@@ -40,3 +40,8 @@ button {
 /* Third questions section */
 /* ----------------------- */
 @import './sections/question.css';
+
+/* ----------------------------- */
+/* All svg arts between sections */
+/* ----------------------------- */
+@import './sections/arts.css';
