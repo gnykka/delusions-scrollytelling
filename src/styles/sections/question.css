@@ -2,9 +2,13 @@
   position: relative;
   width: 100%;
   padding: 3em;
-  padding-top: 1em;
   background: white;
   color: black;
+}
+
+.question.black {
+  background: black;
+  color: white;
 }
 
 .question h2 {
@@ -15,6 +19,7 @@
 .question .content {
   position: relative;
   display: flex;
+  padding-bottom: 1em;
 }
 
 .question .content .task {
@@ -71,7 +76,7 @@
 
 .question .answers {
   display: flex;
-  padding-left: 1px;
+  padding: 0 0 1em 1px;
 }
 
 .question .answers button {
@@ -82,7 +87,7 @@
   font-size: 1.8em;
   font-weight: bold;
   text-align: left;
-  padding: 1em 1.6em;
+  padding: 0.8em 1.4em;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
@@ -104,13 +109,14 @@
 .question .hint {
   max-height: 100vh;
   margin-top: 0.75em;
-  line-height: 1.6em;
+  line-height: 1.4em;
+  font-size: 1.2em;
   overflow: hidden;
   transition: all 200ms ease-in-out;
 }
 
 .question .hint .result {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.8em;
   font-size: 1.8em;
   font-weight: bold;
   font-style: italic;
@@ -122,4 +128,10 @@
 
 .question .hint .result.hidden {
   display: none;
+}
+
+.question .hint p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6px;
 }
