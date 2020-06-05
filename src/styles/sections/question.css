@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding: 3em;
-  padding-top: 0;
+  padding-top: 1em;
   background: white;
   color: black;
 }
@@ -12,11 +12,61 @@
   font-size: 2em;
 }
 
-.question .task {
+.question .content {
+  position: relative;
+  display: flex;
+}
+
+.question .content .task {
   width: 50%;
   margin: 1.6em 0;
   font-size: 1.2em;
   line-height: 1.5em;
+}
+
+.question .content svg {
+  position: absolute;
+  bottom: 1em;
+  height: 150px;
+}
+
+.question .content svg .black {
+  fill: #1f1f1f;
+}
+
+.question .content svg.ship {
+  right: 50vw;
+  transform: translateX(100%);
+  transition: all 500ms ease-in-out;
+}
+.question .content svg.ship circle {
+  opacity: 0;
+  transition: all 10ms linear;
+}
+.question .content svg.ship.shifted {
+  right: 0;
+  transform: translateX(0);
+}
+.question .content svg.ship.shifted circle {
+  opacity: 1;
+  transition: all 10ms linear 500ms;
+}
+
+.question .content svg.pistol {
+  right: 0;
+  transform: translateX(150%);
+  transition: all 200ms ease-in-out;
+}
+.question .content svg.pistol path {
+  opacity: 0;
+  transition: all 1ms ease-in-out;
+}
+.question .content svg.pistol.shifted {
+  transform: translateX(0);
+}
+.question .content svg.pistol.shifted path {
+  opacity: 1;
+  transition: all 200ms ease-in-out 300ms;
 }
 
 .question .answers {
@@ -26,7 +76,6 @@
 
 .question .answers button {
   flex: 1;
-  max-width: 500px;
   margin-left: -1px;
   border: 1px solid #ddd;
   outline: none;

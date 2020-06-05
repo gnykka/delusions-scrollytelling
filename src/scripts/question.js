@@ -32,4 +32,43 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  const body = document.querySelector('body');
+  const height = body.clientHeight;
+  const { scrollY } = window;
+
+  const svgElements = document.querySelectorAll('.question .content svg');
+  const svgs = [...svgElements].map(el => ({ el }));
+
+  svgs.forEach(svg => {
+    svg.height = svg.el.clientHeight;
+    svg.bottom = svg.el.getBoundingClientRect().bottom + scrollY - height + svg.height;
+
+    const animation = svg.el.querySelector('animateMotion');
+    if (animation) {
+      svg.animation = animation;
+      svg.animated = false;
+    }
+  });
+
+  const onScroll = () => {
+    const scroll = window.scrollY;
+
+    svgs.forEach(svg => {
+      const isInside = scroll >= svg.bottom;
+
+      svg.el.classList.toggle('shifted', isInside);
+
+      if (svg.animation) {
+        if (isInside && !svg.animated) {
+          svg.animated = true;
+          svg.animation.beginElement();
+        } else if (!isInside && svg.animated) {
+          svg.animated = false;
+        }
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll);
 });
