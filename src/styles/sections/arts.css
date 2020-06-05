@@ -67,10 +67,10 @@ svg.mask-container {
   margin: -2px 0;
   background: white;
 }
-svg.mask-container path.black {
+svg path.black {
   fill: #1f1f1f;
 }
-svg.mask-container path.white {
+svg path.white {
   fill: white;
 }
 svg.mask-container path.figure {
@@ -115,7 +115,8 @@ svg.mask-container path.wave-3 {
   animation:         wave3Animation 1500ms ease-in-out infinite both;
 }
 
-svg.rain {
+svg.rain,
+svg.falling {
   width: 100%;
   background: white;
 }
