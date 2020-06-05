@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
       answers[index].classList.add('selected');
       answers.forEach(el => { el.disabled = true; });
 
+      quest.classList.toggle('answered', true);
       hint.querySelector(isOk ? '.right' : '.wrong').classList.remove('hidden');
-      hint.classList.remove('hidden');
 
       results[name] = index;
       localStorage.setItem('results', JSON.stringify(results));
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.height = svg.el.clientHeight;
     svg.bottom = svg.el.getBoundingClientRect().bottom + scrollY - height + svg.height;
 
-    const animation = svg.el.querySelector('animateMotion');
+    const animation = svg.el.querySelector('animateMotion') || svg.el.querySelector('animate');
     if (animation) {
       svg.animation = animation;
       svg.animated = false;

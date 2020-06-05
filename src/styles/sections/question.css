@@ -4,6 +4,7 @@
   padding: 3em;
   background: white;
   color: black;
+  overflow: hidden;
 }
 
 .question.black {
@@ -79,16 +80,26 @@
   opacity: 1;
   transition: all 200ms ease-in-out 300ms;
 }
+.question .content svg.earth {
+  right: 15%;
+}
+.question .content svg.earth circle.dot {
+  opacity: 0;
+}
+.question .content svg.earth.shifted circle.dot {
+  opacity: 1;
+}
 
 .question .answers {
   display: flex;
   padding: 0 0 1em 1px;
+  background: transparent;
 }
 
 .question .answers button {
   flex: 1;
   margin-left: -1px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   outline: none;
   font-size: 1.8em;
   font-weight: bold;
@@ -113,7 +124,7 @@
 }
 
 .question .hint {
-  max-height: 100vh;
+  max-height: 0;
   margin-top: 0.75em;
   line-height: 1.4em;
   font-size: 1.2em;
@@ -128,10 +139,6 @@
   font-style: italic;
 }
 
-.question .hint.hidden {
-  max-height: 0;
-}
-
 .question .hint .result.hidden {
   display: none;
 }
@@ -141,3 +148,13 @@
   padding: 0;
   margin-bottom: 6px;
 }
+
+.question.answered button.ok {
+  background: yellow;
+  color: black;
+}
+
+.question.answered .hint {
+  max-height: 100vh;
+}
+

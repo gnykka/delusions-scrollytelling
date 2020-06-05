@@ -119,4 +119,5 @@ svg.rain,
 svg.falling {
   width: 100%;
   background: white;
+  margin: -2px 0;
 }
