@@ -10,14 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const svgDetails  = svg.querySelectorAll('g.details');
 
   const height = body.clientHeight;
-  const { top, bottom } = section.getBoundingClientRect();
-  const { scrollY } = window;
-
   const svgPadding = parseFloat(window.getComputedStyle(section, null).getPropertyValue('padding-top'));
-  // svg появляется, как только становится виден текст внизу
-  // и исчезает, как только скролл дошёл до конца контейнера с текстом
-  const svgTop = top + scrollY - height + svgPadding;
-  const svgBottom = bottom + scrollY - height;
 
   const animationHeight = text.querySelector('div').clientHeight;
   const animationDistance = Math.round(animationHeight / svgGroups.length);
@@ -31,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const onScroll = () => {
     const scroll = window.scrollY;
+    const { top, bottom } = section.getBoundingClientRect();
+    const svgTop = top + scroll - height + svgPadding;
+    const svgBottom = bottom + scroll - height;
     const isInside = scroll >= svgTop && scroll < svgBottom;
 
     svg.classList.toggle('fixed', isInside);

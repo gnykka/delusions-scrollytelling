@@ -121,3 +121,7 @@ svg.falling {
   background: white;
   margin: -2px 0;
 }
+
+svg.rain {
+  margin-top: -20%;
+}

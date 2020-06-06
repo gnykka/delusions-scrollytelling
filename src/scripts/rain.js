@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const onScroll = () => {
     const scroll = window.scrollY;
-    const isInside = scroll >= bottom && scroll <= bottom + height;
+    const isInside = scroll >= bottom && scroll <= bottom + height * 1.5;
 
     if (isInside) {
-      // translateY from 0 to 30%
-      const translate = ((scroll - bottom) / height) * 30;
+      // translateY from 0 to 50%
+      const translate = ((scroll - bottom) / height) * 50;
       menGroup.style.transform = `translateY(${translate}%)`;
     }
   };

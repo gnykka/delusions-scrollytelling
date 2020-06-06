@@ -35,7 +35,7 @@ button {
 /* -------------------- */
 /* Second intro section */
 /* -------------------- */
-@import './sections/intro.css';
+@import './sections/sections.css';
 
 /* ----------------------- */
 /* Third questions section */

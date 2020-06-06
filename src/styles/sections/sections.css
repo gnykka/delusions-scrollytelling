@@ -1,4 +1,4 @@
-.intro {
+section.text {
   position: relative;
   display: flex;
   padding: 3em;
@@ -7,7 +7,7 @@
   color: white;
 }
 
-.intro .content {
+section.text .content {
   width: 50%;
   padding-right: 1em;
   min-width: 200px;
@@ -15,22 +15,22 @@
   font-size: 1.8em;
 }
 
-.intro .content > div {
+section.text .content > div {
   min-height: max(50vh, 50vw);
   line-height: 1.6em;
 }
 
-.intro .animation svg {
+section.text .animation svg {
   position: absolute;
   top: 3em;
   right: 0;
   width: 50%;
 }
 
-.intro .animation svg.fixed {
+section.text .animation svg.fixed {
   position: fixed;
 }
-.intro .animation svg.bottom {
+section.text .animation svg.bottom {
   top: unset;
   bottom: 3em;
 }
@@ -52,13 +52,13 @@
   stroke-width: 0.79px;
 }
 
-.intro svg.edge {
+section.intro svg.edge {
   position: absolute;
   width: 100%;
   bottom: -3em;
   left: 0;
 }
 
-.intro svg.edge path {
+section.intro svg.edge path {
   fill: white;
 }

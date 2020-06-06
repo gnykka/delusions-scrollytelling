@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   padding: 3em;
+  margin-top: -2px;
   background: white;
   color: black;
   overflow: hidden;
@@ -10,6 +11,10 @@
 .question.black {
   background: black;
   color: white;
+}
+
+.question.shadow {
+  box-shadow: 0px 10px 20px white;
 }
 
 .question h1 {
@@ -93,13 +98,13 @@
 .question .answers {
   display: flex;
   padding: 0 0 1em 1px;
-  background: transparent;
 }
 
 .question .answers button {
   flex: 1;
-  margin-left: -1px;
-  border: 1px solid black;
+  margin-right: -1px;
+  border: 1px solid #ddd;
+  background: white;
   outline: none;
   font-size: 1.8em;
   font-weight: bold;
