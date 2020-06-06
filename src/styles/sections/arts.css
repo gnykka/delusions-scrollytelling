@@ -206,7 +206,7 @@ svg.illusions .d {
   stroke-width: 0.79px;
 }
 svg.illusions .e {
-  fill: #1d1d1d;
+  fill: #000;
   stroke: #fff;
   stroke-miterlimit: 10;
   stroke-width: 0.48px;
@@ -218,5 +218,5 @@ svg.illusions .f {
   stroke-width: 0.51px;
 }
 svg.illusions .h {
-  fill: #1d1d1d;
+  fill: #000;
 }

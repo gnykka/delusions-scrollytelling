@@ -52,7 +52,7 @@ section.text .animation svg.bottom {
   stroke-width: 0.79px;
 }
 
-section.intro svg.edge {
+section svg.edge {
   position: absolute;
   width: 100%;
   bottom: -3em;
