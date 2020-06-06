@@ -5,6 +5,7 @@ include /partials/pistol
 include /partials/earth
 include /partials/rain
 include /partials/falling
+include /partials/illusions
 
 html
   head
@@ -124,7 +125,7 @@ html
           div
             | От ложных интуитивных представлений нельзя полностью избавиться, но можно научиться проверять источник своих суждений: «Что я знаю об этом и почему считаю, что я это знаю?»
         .animation
-          svg(style="background: red;")
+          +illusions()
         svg.edge(viewBox="0 0 441.5 127.7")
           path(d="m0 3.26c17.28-4.74 47.59-11.08 92.63 35.44s92.36 7 158.16 27.41 167.07 28.72 190.71 10.53v51.06h-441.5z")
 
