@@ -85,3 +85,77 @@ svg.edge.reversed {
 svg.edge path {
   fill: white;
 }
+
+section.coin {
+  position: relative;
+}
+section.coin .task {
+  width: 50%;
+  margin: 1.6em 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+@keyframes toss {
+  0% { bottom: 3em;}
+  50% { bottom: 20em;}
+  100% { bottom: 3em;}
+}
+section.coin .animation {
+  position: absolute;
+  overflow: hidden;
+  left: calc(50% + 8em);
+  bottom: 3em;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg) rotateX(0deg);
+  transition: all 1s ease-in-out;
+}
+section.coin .animation.flip {
+  transform: rotateY(720deg) rotateX(720deg);
+}
+section.coin .animation.toss {
+  animation: toss .7s forwards ease-in-out;
+}
+section.coin .animation img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+section.coin .animation img.eagle {
+  opacity: 1;
+}
+
+section.coin .stats {
+  margin-left: 6em;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+section.coin .stats button {
+  display: block;
+  margin-top: 2em;
+  background: white;
+  border: 1px solid black;
+  font-size: 1.2em;
+  padding: 0.4em 1em;
+  outline: none;
+  cursor: pointer;
+}
+section.coin .stats button.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+section.coin .stats button:hover {
+  background: black;
+  color: white;
+}
