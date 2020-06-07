@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('body');
-  const section = document.querySelector('section.middle');
+  const section = document.querySelector('section.illusions');
 
   const text = section.querySelector('.content');
   const texts = text.querySelectorAll('div');
@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const height = body.clientHeight;
   const svgPadding = parseFloat(window.getComputedStyle(section, null).getPropertyValue('padding-top'));
-
-  const headEl = svg.querySelector('g.head');
-  const childEl = svg.querySelector('g.child');
 
   const onScroll = () => {
     const scroll = window.scrollY;

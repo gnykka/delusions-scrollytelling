@@ -16,7 +16,7 @@ section.text .content {
 }
 
 section.text .content > div {
-  min-height: max(50vh, 50vw);
+  padding-bottom: calc(25vh + 20vw);
   line-height: 1.6em;
 }
 
@@ -61,13 +61,22 @@ section.text .animation svg.bottom {
   stroke-width: 0.79px;
 }
 
-section svg.edge {
+svg.edge {
   position: absolute;
   width: 100%;
   bottom: -3em;
   left: 0;
 }
+svg.edge.relative {
+  position: relative;
+  margin-bottom: -3em;
+}
+svg.edge.reversed {
+  bottom: unset;
+  top: -3em;
+  transform: scale(-1);
+}
 
-section.intro svg.edge path {
+svg.edge path {
   fill: white;
 }
