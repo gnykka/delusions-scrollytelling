@@ -227,7 +227,7 @@ svg.bikes.phase-2 .image-2 { transform: translate(-25%, 25%); }
 svg.bikes.phase-2 .image-3 { transform: translate(25%, -25%); }
 svg.bikes.phase-2 .image-4 { transform: translate(25%, 25%); }
 
-svg.bikes.phase-3 .image-1 { transform: translate(25%, 25%); }
+svg.bikes.phase-3 .image-1 { transform: translate(-25%, -25%); }
 svg.bikes.phase-3 .image-2 { transform: translate(25%, -25%); }
 svg.bikes.phase-3 .image-3 { transform: translate(-25%, 25%); }
-svg.bikes.phase-3 .image-4 { transform: translate(-25%, -25%); }
+svg.bikes.phase-3 .image-4 { transform: translate(25%, 25%); }
