@@ -159,3 +159,11 @@ section.coin .stats button:hover {
   background: black;
   color: white;
 }
+
+section.center {
+  padding-bottom: 12em;
+}
+section.center .content {
+  margin: 0 auto;
+  padding: 0;
+}

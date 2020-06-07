@@ -46,3 +46,35 @@ button {
 /* All svg arts between sections */
 /* ----------------------------- */
 @import './sections/arts.css';
+
+footer .content{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  padding: 0 2em;
+  font-size: 3em;
+}
+footer .content .logo {
+  line-height: 0.7em;
+  font-weight: bold;
+}
+footer .content .logo span {
+  font-style: italic;
+}
+footer .content .park {
+  margin-left: auto;
+  height: 2em;
+  object-fit: cover;
+}
+footer .authors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+  font-size: 0.42em;
+}
+footer svg {
+  width: 106%;
+  margin-left: -6%;
+}
