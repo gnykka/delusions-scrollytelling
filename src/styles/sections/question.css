@@ -1,7 +1,7 @@
 .question {
   position: relative;
   width: 100%;
-  padding: 3em;
+  padding: 3em 6em;
   margin-top: -2px;
   background: white;
   color: black;
@@ -26,7 +26,7 @@
 .question .content .task {
   width: 50%;
   margin: 1.6em 0;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5em;
 }
 
@@ -120,8 +120,8 @@
 .question .hint {
   max-height: 0;
   margin-top: 0.75em;
-  line-height: 1.4em;
-  font-size: 1.2em;
+  line-height: 1.5em;
+  font-size: 1.1em;
   overflow: hidden;
   transition: all 200ms ease-in-out;
 }

@@ -1,7 +1,7 @@
 section.text {
   position: relative;
   display: flex;
-  padding: 3em;
+  padding: 3em 6em;
   padding-bottom: 0;
   background: black;
   color: white;
@@ -90,6 +90,8 @@ svg.edge path {
 
 section.coin {
   position: relative;
+  padding: 3em 6em;
+  background: white;
 }
 section.coin .task {
   width: 50%;
