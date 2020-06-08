@@ -50,14 +50,13 @@ section.text .animation svg.bottom {
 }
 
 /* all svg styles (16 groups) */
-.intro .animation svg g {
-  transition: opacity 100ms ease-in-out;
+.intro .animation svg * {
+  transform-origin: center;
+  transition: opacity 250ms ease-in-out,
+              transform 250ms ease-in-out;
 }
 .intro .animation svg .white {
   fill: white;
-}
-.intro .animation svg .opaque {
-  opacity: 0.6;
 }
 .intro .animation svg .custom {
   fill: none;
