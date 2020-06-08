@@ -116,19 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // пятый морфинг — из человека в воду
         if (scroll > morph4 && prevScroll <= morph4) {
           humanElement.style.opacity = 0;
+          waterElement.style.transform = 'scaleY(1)';
           waterElement.style.opacity = 1;
         }
         if (scroll <= morph4 && prevScroll > morph4) {
           humanElement.style.opacity = 1;
+          waterElement.style.transform = 'scaleY(0)';
           waterElement.style.opacity = 0;
         }
 
         // шестой морфинг — из воды в человека
         if (scroll > morph5 && prevScroll <= morph5) {
-          waterElement.style.opacity = 0;
+          waterElement.style.transform = 'scaleY(0)'
+          waterElement.style.opacity = 0
           human2Element.style.opacity = 1;
         }
         if (scroll <= morph5 && prevScroll > morph5) {
+          waterElement.style.transform = 'scaleY(1)';
           waterElement.style.opacity = 1;
           human2Element.style.opacity = 0;
         }

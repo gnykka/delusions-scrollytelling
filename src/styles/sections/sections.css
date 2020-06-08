@@ -55,6 +55,9 @@ section.text .animation svg.bottom {
   transition: opacity 250ms ease-in-out,
               transform 250ms ease-in-out;
 }
+.intro .animation svg g.group {
+  transition: opacity 150ms ease-in-out;
+}
 .intro .animation svg .white {
   fill: white;
 }
