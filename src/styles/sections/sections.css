@@ -21,7 +21,7 @@ section.text .content {
 }
 
 section.text .content > div {
-  padding-bottom: calc(25vh + 20vw);
+  margin-bottom: calc(20vh + 20vw);
   line-height: 1.6em;
 }
 
@@ -90,28 +90,38 @@ svg.edge path {
 
 section.coin {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
   padding: 3em 6em;
   background: white;
 }
+section.coin h2 {
+  width: 100%;
+}
 section.coin .task {
-  width: 50%;
-  margin: 1.6em 0;
-  font-size: 1.2em;
+  width: 33%;
+  font-size: 1.4em;
   line-height: 1.5em;
 }
 
 @keyframes toss {
-  0% { bottom: 3em;}
+  0% { bottom: 4em;}
   50% { bottom: 20em;}
-  100% { bottom: 3em;}
+  100% { bottom: 4em;}
+}
+section.coin .action {
+  height: 18em;
+  position: relative;
 }
 section.coin .animation {
   position: absolute;
   overflow: hidden;
-  left: calc(50% + 8em);
-  bottom: 3em;
-  height: 100px;
-  width: 100px;
+  bottom: 4em;
+  height: 150px;
+  width: 150px;
+  left: calc(50% - 75px);
   border-radius: 50%;
   background: black;
   display: flex;
@@ -140,13 +150,17 @@ section.coin .animation img.eagle {
 }
 
 section.coin .stats {
-  margin-left: 6em;
+  width: 100px;
   font-size: 1.2em;
   line-height: 1.6em;
 }
-section.coin .stats button {
+section.coin .action button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  white-space: nowrap;
+  transform: translateX(-50%);
   display: block;
-  margin-top: 2em;
   background: white;
   border: 1px solid black;
   font-size: 1.2em;
