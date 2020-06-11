@@ -103,6 +103,7 @@
 
 .question .answers button {
   flex: 1;
+  display: flex;
   margin-right: -1px;
   border: 1px solid #ddd;
   background: white;
@@ -144,6 +145,8 @@
 }
 
 .question .hint {
+  display: flex;
+  flex-wrap: wrap;
   max-height: 0;
   margin-top: 1em;
   line-height: 1.5em;
@@ -153,8 +156,9 @@
 }
 
 .question .hint .result {
+  width: 100%;
   margin-bottom: 0.8em;
-  font-size: 1.8em;
+  font-size: 1.65em;
   font-weight: bold;
   font-style: italic;
 }
@@ -167,6 +171,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 6px;
+}
+
+.question .hint .column {
+  width: 50%;
+  padding-right: 20px;
 }
 
 .question.answered .hint {

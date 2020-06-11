@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const height = body.clientHeight;
   const svgPadding = parseFloat(window.getComputedStyle(section, null).getPropertyValue('padding-top'));
 
-  const animationHeight = text.querySelector('div').clientHeight;
+  // голова висит подольше
+  const animationHeight = text.querySelector('div').clientHeight * 2;
   const animationDistance = Math.round(animationHeight / svgGroups.length);
 
   const hideSvg = () => {
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let prevScroll = window.scrollY;
 
   const morphingHeight = text.clientHeight - animationHeight;
-  const morphingDistance = Math.round(morphingHeight / 6);
+  const morphingDistance = Math.round(morphingHeight / 4); // всего превращений 6, но 3 за 1 время
 
   const headElement = svg.querySelector('#head');
   const circleElement = svg.querySelector('#circle');
@@ -47,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.classList.toggle('bottom', scroll >= svgBottom);
 
     const animationStart = svgTop + animationHeight;
-    const morph1 = animationStart + morphingDistance;
-    const morph2 = animationStart + morphingDistance * 2;
-    const morph3 = animationStart + morphingDistance * 3;
-    const morph4 = animationStart + morphingDistance * 4;
-    const morph5 = animationStart + morphingDistance * 5;
+    const morph1 = animationStart + morphingDistance / 3;
+    const morph2 = animationStart + morphingDistance / 3 * 2;
+    const morph3 = animationStart + morphingDistance;
+    const morph4 = animationStart + morphingDistance * 2;
+    const morph5 = animationStart + morphingDistance * 3;
 
     if (isInside) {
       if (scroll <= animationStart) {
@@ -107,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (scroll > morph3 && prevScroll <= morph3) {
           lineElement.style.opacity = 0;
           humanElement.style.opacity = 1;
+          humanElement.classList.toggle('shift', true);
         }
         if (scroll <= morph3 && prevScroll > morph3) {
           lineElement.style.opacity = 1;
@@ -121,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (scroll <= morph4 && prevScroll > morph4) {
           humanElement.style.opacity = 1;
+          humanElement.classList.toggle('shift', false);
           waterElement.style.transform = 'scaleY(0)';
           waterElement.style.opacity = 0;
         }
