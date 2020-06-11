@@ -1,11 +1,17 @@
 .question {
   position: relative;
   width: 100%;
-  padding: 3em 12em;
+  padding: 3em 6em;
   margin-top: -2px;
   background: white;
   color: black;
   overflow: hidden;
+}
+
+@media(min-width: 1024px) {
+  .question {
+    padding: 3em 12em;
+  }
 }
 
 .question.black {
@@ -39,6 +45,7 @@
   position: absolute;
   bottom: 1em;
   height: 170px;
+  max-width: 50%;
 }
 
 .question .content svg .black {
