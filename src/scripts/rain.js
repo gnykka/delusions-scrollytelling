@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isInside) {
       // translateY from 0 to 50%
       const translate = ((scroll - bottom) / height) * 50;
-      menGroup.style.transform = `translateY(${translate}%)`;
+      menGroup.style.transform = `translateY(${translate}%) scale(1.5)`;
     }
   };
 

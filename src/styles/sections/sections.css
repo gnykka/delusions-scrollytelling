@@ -7,6 +7,11 @@ section.text {
   color: white;
 }
 
+section h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
 section h2 {
   margin: 0;
   font-size: 2em;
@@ -95,7 +100,8 @@ section.coin {
   align-items: flex-end;
   justify-content: space-between;
   padding: 3em 6em;
-  background: white;
+  background: black;
+  color: white;
 }
 section.coin h2 {
   width: 100%;
@@ -134,6 +140,7 @@ section.coin .animation.flip {
   transform: rotateY(720deg) rotateX(720deg);
 }
 section.coin .animation.toss {
+  background: #6e6e6e;
   animation: toss .7s forwards ease-in-out;
 }
 section.coin .animation img {
@@ -150,7 +157,7 @@ section.coin .animation img.eagle {
 }
 
 section.coin .stats {
-  width: 100px;
+  width: 240px;
   font-size: 1.2em;
   line-height: 1.6em;
 }
@@ -161,8 +168,9 @@ section.coin .action button {
   white-space: nowrap;
   transform: translateX(-50%);
   display: block;
-  background: white;
-  border: 1px solid black;
+  background: black;
+  border: 1px solid white;
+  color: white;
   font-size: 1.2em;
   padding: 0.4em 1em;
   outline: none;
@@ -174,8 +182,8 @@ section.coin .stats button.disabled {
   cursor: default;
 }
 section.coin .stats button:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 section.center {

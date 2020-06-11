@@ -17,6 +17,10 @@
   box-shadow: 0px 10px 20px white;
 }
 
+.question h2 {
+  width: 50%;
+}
+
 .question .content {
   position: relative;
   display: flex;
@@ -33,7 +37,7 @@
 .question .content svg {
   position: absolute;
   bottom: 1em;
-  height: 120px;
+  height: 170px;
 }
 
 .question .content svg .black {
@@ -42,7 +46,7 @@
 
 .question .content svg.ship {
   right: 50vw;
-  transform: translateX(200%);
+  transform: translateX(160%);
   transition: all 500ms ease-in-out;
 }
 .question .content svg.ship circle {
@@ -75,7 +79,7 @@
   transition: all 200ms ease-in-out 300ms;
 }
 .question .content svg.earth {
-  right: 15%;
+  right: 10%;
 }
 .question .content svg.earth circle.dot {
   opacity: 0;
@@ -95,19 +99,17 @@
   border: 1px solid #ddd;
   background: white;
   outline: none;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: bold;
   text-align: left;
-  padding: 0.8em 1.4em;
+  padding: 0.8em 1.2em;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
-
 .question .answers button:disabled {
   cursor: default;
   color: black;
 }
-
 .question .answers button:not(:disabled):hover {
   background: black;
   color: white;
@@ -115,6 +117,22 @@
 .question .answers button.selected {
   background: black;
   color: white;
+}
+
+.question.black .answers button {
+  background: black;
+  color: white;
+}
+.question.black .answers button:disabled {
+  color: white;
+}
+.question.black .answers button:not(:disabled):hover {
+  background: white;
+  color: black;
+}
+.question.black .answers button.selected {
+  background: white;
+  color: black;
 }
 
 .question .hint {
