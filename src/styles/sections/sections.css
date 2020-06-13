@@ -31,6 +31,12 @@ section.text .content > div {
   line-height: 1.6em;
 }
 
+section.text .content .quote {
+  padding: 1em 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
 section.text .content a {
   color: white;
   text-decoration: none;
@@ -112,6 +118,7 @@ section.coin h1 {
 }
 section.coin .task {
   width: 50%;
+  margin-top: 2em;
   font-size: 1.4em;
   line-height: 1.5em;
 }
@@ -142,7 +149,7 @@ section.coin .animation {
   justify-content: center;
   align-items: center;
   transform: rotateY(0deg) rotateX(0deg);
-  transition: all 1s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 section.coin .animation.flip {
   transform: rotateY(720deg) rotateX(720deg);
@@ -191,6 +198,22 @@ section.coin .stats button:hover {
   background: white;
   color: black;
 }
+section.coin .stats .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.coin .stats .result > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1em;
+  font-size: 1.2em;
+}
+section.coin .stats .result > div span {
+  font-size: 3em;
+  line-height: 1.1em;
+}
 
 section.center {
   padding-bottom: 12em;
@@ -198,4 +221,11 @@ section.center {
 section.center .content {
   margin: 0 auto;
   padding: 0;
+}
+
+section.text.inverse .content {
+  margin-left: 50%;
+}
+section.text.inverse .animation svg {
+  left: 0;
 }

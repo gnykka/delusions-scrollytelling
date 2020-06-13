@@ -96,6 +96,15 @@
   opacity: 1;
 }
 
+.question .content svg.moon {
+  right: 10%;
+  bottom: -1em;
+}
+.question .content svg.seasons {
+  right: 10%;
+  height: 220px;
+}
+
 .question .answers {
   display: flex;
   padding: 0 0 1em 1px;
@@ -165,6 +174,24 @@
 
 .question .hint .result.hidden {
   display: none;
+}
+
+.question .hint img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.question .hint .iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.question .hint .iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .question .hint p {
