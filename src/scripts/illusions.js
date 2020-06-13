@@ -19,10 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const phase1 = top > 0;
     const phase2 = top <= 0;
-    const phase3 = texts[1].getBoundingClientRect().top <= 0;
-    const phase4 = texts[2].getBoundingClientRect().top <= 0;
-    const phase5 = texts[3].getBoundingClientRect().top <= 0;
-    const phase6 = texts[5].getBoundingClientRect().top <= 0;
+
+    const childTop = texts[2].getBoundingClientRect().top;
+    const childLength = (childTop - top) / 3;
+
+    const phase3 = top + childLength <= 0;
+    const phase4 = top + childLength * 2 <= 0;
+    // end of child
+
+    const phase5 = childTop <= 0;
+    const phase6 = texts[3].getBoundingClientRect().top <= 0;
 
     svg.classList.toggle('phase-1', phase1);
     svg.classList.toggle('phase-2', phase2 && !phase3);
@@ -37,9 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
   svg.style.height = `${height - svgPadding * 2}px`;
 });
 
+// первые 2 абзаца:
 // phase1 - сначала child-1
 // phase2 - когда стал fixed - child-2, вместо arc появился ellipse
-// phase3 - второй абзац — child-3, ellipse пропал
-// phase4 - третий абзац — child-4, сверху появляется круг
-// phase5 - четвёртый абзац — исчезает ребёнок, появляется голова
-// phase6 - шестой абзац — исчезает голова, появляются сначала бык, потом сразу человек
+// phase3 - child-3, ellipse пропал
+// phase4 - child-4, сверху появляется круг
+
+// phase5 - третий абзац — исчезает ребёнок, появляется голова
+// phase6 - четвёртый абзац — исчезает голова, появляются сначала бык, потом сразу человек
