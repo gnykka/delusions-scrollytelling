@@ -133,11 +133,13 @@ document.addEventListener('DOMContentLoaded', () => {
           waterElement.style.transform = 'scaleY(0)'
           waterElement.style.opacity = 0
           human2Element.style.opacity = 1;
+          human2Element.classList.toggle('shift', true);
         }
         if (scroll <= morph5 && prevScroll > morph5) {
           waterElement.style.transform = 'scaleY(1)';
           waterElement.style.opacity = 1;
           human2Element.style.opacity = 0;
+          human2Element.classList.toggle('shift', false);
         }
       }
     } else if (scroll < svgTop) {
