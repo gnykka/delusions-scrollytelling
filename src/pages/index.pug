@@ -133,8 +133,9 @@ html
             | От ложных интуитивных представлений нельзя полностью избавиться, но можно научиться проверять источник своих суждений: «Что я знаю об этом и почему считаю, что я это знаю?»
         .animation
           +illusions()
-        svg.edge(viewBox="0 0 441.5 127.7")
-          path(d="m0 3.26c17.28-4.74 47.59-11.08 92.63 35.44s92.36 7 158.16 27.41 167.07 28.72 190.71 10.53v51.06h-441.5z")
+
+      svg.edge.relative(viewBox="0 0 441.5 127.7" style="margin-top: -6em")
+        path(d="m0 3.26c17.28-4.74 47.59-11.08 92.63 35.44s92.36 7 158.16 27.41 167.07 28.72 190.71 10.53v51.06h-441.5z")
 
       section.question(data-name="luna")
         h1 Мы не знаем, чего не знаем
@@ -194,6 +195,7 @@ html
             image.image-2(x="90" y="110" width="120" xlink:href="../assets/bikes/02.png")
             image.image-3(x="90" y="110" width="120" xlink:href="../assets/bikes/03.png")
             image.image-4(x="90" y="110" width="120" xlink:href="../assets/bikes/04.png")
+            image.pigeon(x="50" y="50" width="200" xlink:href="../assets/pigeon.svg")
 
       section.coin
         h1 Единичный опыт мы считаем закономерностью
@@ -241,6 +243,8 @@ html
         .content
           .task
             | Это стандартный барный стакан объемом в 1 пинту — 0,47 литра. Высота стакана — 14,9 см, диаметр дна — 6 см, диаметр верхней части — 8,2 см. Бармен налил пиво только на высоту 12,7 см. Сколько пива он сэкономил?
+          svg.seasons(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100")
+            image(width="100" height="100" xlink:href="../assets/beer.jpg")
         .answers
           button 5%
           button 10%

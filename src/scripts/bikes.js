@@ -17,10 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.classList.toggle('fixed', isInside);
     svg.classList.toggle('bottom', bottom < height);
 
-    const phase2 = texts[0].getBoundingClientRect().top <= 0;
+    const phase1 = texts[1].getBoundingClientRect().top <= 0;
+    const phase2 = texts[1].getBoundingClientRect().top + height * 0.25 <= 0;
 
-    svg.classList.toggle('phase-1', !phase2);
-    svg.classList.toggle('phase-2', phase2);
+    const phase3 = texts[2].getBoundingClientRect().top <= 0;
+
+    svg.classList.toggle('phase-1', phase1 && !phase2);
+    svg.classList.toggle('phase-2', phase2 && !phase3)
+    svg.classList.toggle('phase-3', phase3);
   }
 
   window.addEventListener('scroll', onScroll);

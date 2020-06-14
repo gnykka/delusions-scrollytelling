@@ -80,7 +80,7 @@ section.text .animation svg.bottom {
   stroke-width: 0.79px;
 }
 .intro .animation svg .shift {
-  transform: translate(10px, 30px) !important;
+  transform: translate(10px, 25px) !important;
 }
 
 svg.edge {
