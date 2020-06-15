@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.classList.toggle('phase-3', phase3 && !phase4);
     svg.classList.toggle('phase-4', phase4 && !phase5);
     svg.classList.toggle('phase-5', phase5 && !phase6);
-    svg.classList.toggle('phase-6', phase6 || bottom < height);
+    svg.classList.toggle('phase-6', phase6);
   }
 
   window.addEventListener('scroll', onScroll);

@@ -130,7 +130,8 @@ svg.illusions {
   background: black
 }
 
-svg.illusions * {
+svg.illusions > g {
+  opacity: 0;
   transition: opacity 300ms ease-in;
 }
 
@@ -139,74 +140,14 @@ svg.illusions .head {
   transform-origin: center;
 }
 
-svg.illusions.phase-1 .child { opacity: 1; }
-svg.illusions.phase-1 .child .sun { opacity: 0; }
-svg.illusions.phase-1 .child .orbit { opacity: 0; }
-svg.illusions.phase-1 .child .arc { opacity: 0; }
-svg.illusions.phase-1 .child .figure { opacity: 1; }
-svg.illusions.phase-1 .child .plane { opacity: 1; }
-svg.illusions.phase-1 .head { opacity: 0; }
-svg.illusions.phase-1 .bull { opacity: 0; }
-svg.illusions.phase-1 .masks { opacity: 0; }
-svg.illusions.phase-1 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-2 .child { opacity: 1; }
-svg.illusions.phase-2 .child .sun { opacity: 1; }
-svg.illusions.phase-2 .child .orbit { opacity: 0; }
-svg.illusions.phase-2 .child .arc { opacity: 0; }
-svg.illusions.phase-2 .child .figure { opacity: 1; }
-svg.illusions.phase-2 .child .plane { opacity: 1; }
-svg.illusions.phase-2 .head { opacity: 0; }
-svg.illusions.phase-2 .bull { opacity: 0; }
-svg.illusions.phase-2 .masks { opacity: 0; }
-svg.illusions.phase-2 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-3 .child { opacity: 1; }
-svg.illusions.phase-3 .child .sun { opacity: 0; }
-svg.illusions.phase-3 .child .orbit { opacity: 1; }
-svg.illusions.phase-3 .child .arc { opacity: 0; }
-svg.illusions.phase-3 .child .figure { opacity: 1; }
-svg.illusions.phase-3 .child .plane { opacity: 1; }
-svg.illusions.phase-3 .head { opacity: 0; }
-svg.illusions.phase-3 .bull { opacity: 0; }
-svg.illusions.phase-3 .masks { opacity: 0; }
-svg.illusions.phase-3 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-4 .child { opacity: 1; }
-svg.illusions.phase-4 .child .sun { opacity: 0; }
-svg.illusions.phase-4 .child .orbit { opacity: 0; }
-svg.illusions.phase-4 .child .arc { opacity: 1; }
-svg.illusions.phase-4 .child .figure { opacity: 1; }
-svg.illusions.phase-4 .child .plane { opacity: 1; }
-svg.illusions.phase-4 .head { opacity: 0; }
-svg.illusions.phase-4 .bull { opacity: 0; }
-svg.illusions.phase-4 .masks { opacity: 0; }
-svg.illusions.phase-4 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-5 .child { opacity: 0; }
+svg.illusions.phase-1 .child-1 { opacity: 1; }
+svg.illusions.phase-2 .child-2 { opacity: 1; }
+svg.illusions.phase-3 .child-3 { opacity: 1; }
+svg.illusions.phase-4 .child-4 { opacity: 1; }
 svg.illusions.phase-5 .head { opacity: 1; }
-svg.illusions.phase-5 .bull { opacity: 0; }
-svg.illusions.phase-5 .masks { opacity: 0; }
-svg.illusions.phase-5 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-6 .child { opacity: 0; }
-svg.illusions.phase-6 .head { opacity: 0; }
 svg.illusions.phase-6 .bull { opacity: 1; }
-svg.illusions.phase-6 .masks { opacity: 0; }
-svg.illusions.phase-6 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-7 .child { opacity: 0; }
-svg.illusions.phase-7 .head { opacity: 0; }
-svg.illusions.phase-7 .bull { opacity: 0; }
 svg.illusions.phase-7 .masks { opacity: 1; }
-svg.illusions.phase-7 .masks-2 { opacity: 0; }
-
-svg.illusions.phase-8 .child { opacity: 0; }
-svg.illusions.phase-8 .head { opacity: 0; }
-svg.illusions.phase-8 .bull { opacity: 0; }
-svg.illusions.phase-8 .masks { opacity: 0; }
 svg.illusions.phase-8 .masks-2 { opacity: 1; }
-
 
 svg.illusions .a {
   fill: none;
