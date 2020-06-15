@@ -283,9 +283,8 @@ svg.regularity > g {
 }
 
 svg.regularity.phase-0 .mask { opacity: 1; }
-svg.regularity.phase-1 .figure-1 { opacity: 1; }
-svg.regularity.phase-2 .figure-2 { opacity: 1; }
-svg.regularity.phase-3 .head { opacity: 1; }
-svg.regularity.phase-4 .snakes { opacity: 1; }
-svg.regularity.phase-5 .monkey { opacity: 1; }
-svg.regularity.phase-6 .finger { opacity: 1; }
+svg.regularity.phase-1 .figure { opacity: 1; }
+svg.regularity.phase-2 .head { opacity: 1; }
+svg.regularity.phase-3 .snakes { opacity: 1; }
+svg.regularity.phase-4 .monkey { opacity: 1; }
+svg.regularity.phase-5 .finger { opacity: 1; }
