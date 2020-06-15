@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // end of child
 
     const phase5 = childTop <= 0;
-    const phase6 = texts[3].getBoundingClientRect().top - height * 0.25 <= 0;
-    const phase7 = texts[4].getBoundingClientRect().top - height * 0.25 <= 0;
-    const phase8 = texts[5].getBoundingClientRect().top - height * 0.25 <= 0;
+    const phase6 = texts[3].getBoundingClientRect().top - height * 0.3 <= 0;
+    const phase7 = texts[4].getBoundingClientRect().top - height * 0.3 <= 0;
+    const phase8 = texts[5].getBoundingClientRect().top - height * 0.3 <= 0;
 
     svg.classList.toggle('phase-1', phase1);
     svg.classList.toggle('phase-2', phase2 && !phase3);

@@ -57,7 +57,7 @@ section.text .animation svg.fixed {
   position: fixed;
 }
 section.text .animation svg.bottom {
-  top: unset;
+  top: unset !important;
   bottom: 3em;
 }
 
