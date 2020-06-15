@@ -43,7 +43,7 @@
 
 .question .content svg {
   position: absolute;
-  bottom: 1em;
+  bottom: 2.6em;
   height: 170px;
   max-width: 50%;
 }
@@ -102,7 +102,6 @@
 }
 .question .content svg.seasons {
   right: 10%;
-  height: 220px;
 }
 
 .question .answers {
