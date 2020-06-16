@@ -10,19 +10,19 @@ include /partials/regularity
 
 html
   head
-    title Проект «Искажения» — ищем у себя систематические ошибки мышления
-    meta(name="title" content="Проект «Искажения» — ищем у себя систематические ошибки мышления")
+    title Искажения — ищем  у себя ошибки мышления
+    meta(name="title" content="Искажения — ищем  у себя ошибки мышления")
     meta(name="description" content="Interactive story on delusions and biases for Intuition Park")
 
     meta(name="host" content="https://bias.slaylines.io")
     meta(name="site" content="Bias")
-    meta(name="title" content="Проект «Искажения» — ищем у себя систематические ошибки мышления")
+    meta(name="title" content="Искажения — ищем  у себя ошибки мышления")
     meta(name="description" content="Когнитивные искажения есть у каждого, они заставляют неправильно воспринимать новую информацию и делать ошибочные выводы. Проверьте, легко ли вас обмануть.")
     meta(name="url" content="https://bias.slaylines.io")
 
     meta(property="og:type" content="website")
-    meta(property="og:site_name" content="Проект «Искажения» — ищем у себя систематические ошибки мышления")
-    meta(property="og:title" content="Проект «Искажения» — ищем у себя систематические ошибки мышления")
+    meta(property="og:site_name" content="Искажения — ищем  у себя ошибки мышления")
+    meta(property="og:title" content="Искажения — ищем  у себя ошибки мышления")
     meta(property="og:description" content="Когнитивные искажения есть у каждого, они заставляют неправильно воспринимать новую информацию и делать ошибочные выводы. Проверьте, легко ли вас обмануть.")
     meta(property="og:url" content="https://bias.slaylines.io")
 
@@ -32,7 +32,7 @@ html
     meta(property="og:image:height" constent="1260")
     meta(property="og:image:alt" constent="Искажения")
 
-    meta(name="twitter:title" constent="Проект «Искажения» — ищем у себя систематические ошибки мышления")
+    meta(name="twitter:title" constent="Искажения — ищем  у себя ошибки мышления")
     meta(name="twitter:description" constent="Когнитивные искажения есть у каждого, они заставляют неправильно воспринимать новую информацию и делать ошибочные выводы. Проверьте, легко ли вас обмануть.")
     meta(name="twitter:url" constent="https://bias.slaylines.io")
 
@@ -48,6 +48,25 @@ html
     script(src="../scripts/bikes.js")
     script(src="../scripts/coin.js")
     script(src="../scripts/regularity.js")
+
+    //- Google Analytics
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-139151211-3")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-139151211-3');
+
+    //- Hotjar
+    script.
+      ((function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1339450,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='))
 
   body
     main
