@@ -207,13 +207,27 @@ section.coin .stats .result > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 1em;
+  margin: 0 0.75em;
   font-size: 1.2em;
 }
 section.coin .stats .result > div span {
+  position: relative;
+  display: block;
   font-size: 3em;
   line-height: 1.1em;
 }
+section.coin .stats .result > div span:after {
+  content: '%';
+  font-size: 0.4em;
+  line-height: 1em;
+}
+section.coin .stats .count {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0.75em;
+}
+
 
 section.center {
   padding-bottom: 8em;
@@ -221,6 +235,7 @@ section.center {
 section.center .content {
   margin: 0 auto;
   padding: 0;
+  line-height: 1.6em;
 }
 section.center .content img {
   width: 100%;
