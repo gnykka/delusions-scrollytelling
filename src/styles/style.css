@@ -27,12 +27,16 @@ button {
 
 .likely {
   width: 100%;
-  margin: -30px 0 0 0 !important;
+  margin: -20px 0 0 0 !important;
   background: white;
   text-align: center;
 }
 .likely div {
   margin: 0 0.5em 1em 0.5em !important;
+  filter: grayscale(1);
+}
+.likely div:hover {
+  filter: none;
 }
 
 /* ------------------- */
@@ -63,12 +67,9 @@ footer .content{
   padding: 0 2em;
   font-size: 3em;
 }
-footer .content .logo {
-  line-height: 0.7em;
-  font-weight: bold;
-}
-footer .content .logo span {
-  font-style: italic;
+footer .content .logo svg {
+  fill: white;
+  height: 2em;
 }
 footer .content .park {
   margin-left: auto;

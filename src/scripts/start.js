@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const section = document.querySelector('section.start');
 
   const header = section.querySelector('.header');
-  const svg = section.querySelector('svg');
+  const svg = section.querySelector('svg.ellipse');
   const anchor = section.querySelector('.anchor');
   const ellipse = svg.querySelector('ellipse');
 

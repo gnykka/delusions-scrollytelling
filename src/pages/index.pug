@@ -1,3 +1,4 @@
+include /partials/logo
 include /partials/intro
 include /partials/mask
 include /partials/ship
@@ -78,9 +79,9 @@ html
       section.start
         .header.fixed
           .logo
-            | И<span>с</span>ка<br/>&nbsp;ж<span>е</span><br/>н<span>и</span>я
+            +logo()
           .year 2020
-        svg
+        svg.ellipse
           ellipse(cx="50%" cy="50%" rx="250" ry="25")
         .anchor
 
@@ -333,7 +334,7 @@ html
       footer
         .content
           .logo
-            | И<span>с</span>ка<br/>ж<span>е</span><br/>н<span>и</span>я
+            +logo()
           img.park(src="../assets/park.svg")
           .authors
             div Наталия Степанова

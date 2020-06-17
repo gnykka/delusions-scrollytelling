@@ -21,8 +21,9 @@
   transition: color 200ms ease-in-out;
 }
 
-.start .header .logo {
-  line-height: 0.7em;
+.start .header .logo svg {
+  object-fit: contain;
+  width: 2.6em;
 }
 
 .start .header .logo span {
@@ -48,7 +49,7 @@
   background: black;
 }
 
-.start svg {
+.start > svg {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -57,13 +58,16 @@
   background: white;
 }
 
-.start svg ellipse {
+.start > svg ellipse {
   transform-origin: center;
   transform: rotate(-25deg);
 }
 
 .start.dark .header {
   color: white;
+}
+.start.dark .header svg .a {
+  fill: white;
 }
 .start.dark .header .year:after {
   background: white;
