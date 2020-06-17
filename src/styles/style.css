@@ -27,6 +27,7 @@ button {
 
 .likely {
   width: 100%;
+  min-height: 50px;
   margin: -20px 0 0 0 !important;
   background: white;
   text-align: center;
@@ -59,7 +60,7 @@ button {
 /* ----------------------------- */
 @import './sections/arts.css';
 
-footer .content{
+footer .content {
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -67,23 +68,32 @@ footer .content{
   padding: 0 2em;
   font-size: 3em;
 }
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white !important;
+  border-bottom: 1px solid black;
+}
+footer a:hover {
+  border-bottom-color: white;
+}
 footer .content .logo svg {
   fill: white;
-  height: 2em;
+  height: 2.3em;
+  margin-bottom: -0.3em;
 }
 footer .content .park {
   margin-left: auto;
+}
+footer .content .park img {
   height: 2em;
   object-fit: cover;
 }
 footer .authors {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-left: 1em;
   font-size: 0.42em;
 }
-footer svg {
+footer > svg {
   width: 106%;
   margin-left: -6%;
 }

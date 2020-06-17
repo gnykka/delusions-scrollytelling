@@ -219,7 +219,10 @@ svg.bikes.phase-3 .image-3 { opacity: 0; }
 svg.bikes.phase-3 .image-4 { opacity: 0; }
 svg.bikes.phase-3 .pigeon { opacity: 1; }
 
-svg.regularity { top: 0 !important; }
+svg.regularity {
+  top: 0 !important;
+  bottom: 0 !important;
+}
 svg.regularity > g {
   opacity: 0;
   transition: all 100ms ease-in-out;
