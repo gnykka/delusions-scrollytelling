@@ -25,6 +25,16 @@ button {
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.likely {
+  width: 100%;
+  margin: -30px 0 0 0 !important;
+  background: white;
+  text-align: center;
+}
+.likely div {
+  margin: 0 0.5em 1em 0.5em !important;
+}
+
 /* ------------------- */
 /* First start section */
 /* ------------------- */
