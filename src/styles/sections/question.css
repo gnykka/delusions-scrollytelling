@@ -160,7 +160,7 @@
   line-height: 1.5em;
   font-size: 1.1em;
   overflow: hidden;
-  transition: all 200ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .question .hint .result {
@@ -205,6 +205,6 @@
 }
 
 .question.answered .hint {
-  max-height: 100vh;
+  max-height: 150vh;
 }
 
