@@ -16,6 +16,6 @@
     "parcel-bundler": "1.12.4"
   },
   "devDependencies": {
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   }
 }
